@@ -76,6 +76,7 @@ body.dark-theme {
 	font-size: 1.2rem;
 	cursor: pointer;
 }
+
 .open-whats {
 	display: none;
 }
@@ -178,8 +179,8 @@ img {
 /*========== LAYOUT ==========*/
 
 .bd-container {
-	max-width: 968px;
-	width: calc(100% - 3rem);
+	/* max-width: 968px; */
+	width: calc(100% - 9rem);
 	margin-left: var(--mb-3);
 	margin-right: var(--mb-3);
 }
@@ -289,6 +290,20 @@ img {
 	border-radius: 50%;
 	justify-self: center;
 	margin-bottom: var(--mb-1);
+	animation: blobanim 3s ease-in-out infinite;
+	transition: all 1s ease-in-out;
+}
+
+@keyframes blobanim {
+
+	0%,
+	100% {
+		border-radius: 60% 40% 30% 70% / 60% 30% 70% 40%;
+	}
+
+	50% {
+		border-radius: 30% 60% 70% 40% / 50% 60% 30% 60%;
+	}
 }
 
 .home__title {
@@ -547,14 +562,14 @@ img {
 		background-color: var(--container-color-alt);
 		border-radius: 50%;
 	} */
-	
+
 }
 
 /* Classes modified for large screen size */
 
 @media screen and (min-width: 968px) {
 	body {
-		margin: 3rem 0;
+		margin: 4rem 0;
 	}
 
 	.change-theme {
@@ -566,6 +581,7 @@ img {
 		font-size: 1.2rem;
 		cursor: pointer;
 	}
+
 	/* .open-whats {
 		position: absolute;
 		right: 0;
