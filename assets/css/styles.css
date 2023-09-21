@@ -7,13 +7,20 @@
 :root {
 	--header-height: 3rem;
 	/*========== Colors ==========*/
-	--title-color: #333;
+	/* --title-color: #333;
 	--text-color: #555;
 	--text-color-light: #aaaaaa;
 	--container-color: #e2e2e2;
 	--container-color-alt: #EEE;
 	--body-color: #F5F5F5;
-	--nav-color: #FFFFFF;
+	--nav-color: #FFFFFF; */
+	--title-color: #333;
+    --text-color: #555;
+    --text-color-light: #888;
+    --container-color: #FFF;
+    --container-color-alt: #F0F0F0;
+    --body-color: #F7F7F7;
+    --nav-color: #FFFFFF;
 	/*========== Font and typography ==========*/
 	--body-font: 'Georama', sans-serif;
 	--h1-font-size: 1.5rem;
@@ -49,12 +56,19 @@ html {
 
 /*========== Variables Dark theme ==========*/
 body.dark-theme {
-	--title-color: #F2F2F2;
+	/* --title-color: #F2F2F2;
 	--text-color: #BFBFBF;
 	--container-color: #212121;
 	--container-color-alt: #111;
 	--body-color: #282828;
-	--nav-color: #1F1F1F;
+	--nav-color: #1F1F1F; */
+	--title-color: #FFF;
+    --text-color: #DDD;
+    --text-color-light: #AAA;
+    --container-color: #333;
+    --container-color-alt: #444;
+    --body-color: #222;
+    --nav-color: #1F1F1F;
 }
 
 
@@ -107,6 +121,9 @@ body.dark-theme {
 	top: 2.2rem;
 	left: 0;
 	font-size: 1.2rem;
+	background-color: var(--container-color);
+	border-radius: 50%;
+	padding: .5rem;
 	color: var(--text-color);
 	cursor: pointer;
 }
@@ -125,6 +142,12 @@ body {
 }
 
 @media (prefers-color-scheme: light) {
+	body {
+		background-color: var(--body-color);
+		color: var(--text-color);
+	}
+}
+@media (prefers-color-scheme: dark) {
 	body {
 		background-color: var(--body-color);
 		color: var(--text-color);
@@ -326,8 +349,8 @@ img {
 }
 
 .home__icon {
-	background-color: var(--container-color-alt);
-	border-radius: 50%;
+	/* background-color: var(--container-color-alt);
+	border-radius: 50%; */
 	padding: .3rem;
 	font-size: 1.2rem;
 	margin-right: .25rem;
@@ -369,8 +392,8 @@ img {
 }
 
 .social__icon {
-	background-color: var(--container-color-alt);
-	border-radius: 50%;
+	/* background-color: var(--container-color-alt);
+	border-radius: 50%; */
 	padding: .3rem;
 	font-size: 1.2rem;
 	margin-right: .25rem;
