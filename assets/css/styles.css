@@ -70,7 +70,7 @@ body.dark-theme {
 	top: 1.5rem;
 	display: flex;
 	color: var(--text-color);
-	background-color: var(--container-color-alt);
+	background-color: var(--container-color);
 	border-radius: 50%;
 	padding: .5rem;
 	font-size: 1.2rem;
@@ -87,7 +87,7 @@ body.dark-theme {
 	top: 1.5rem;
 	display: flex;
 	color: var(--text-color);
-	background-color: var(--container-color-alt);
+	background-color: var(--container-color);
 	border-radius: 50%;
 	z-index: 999;
 	padding: .5rem;
@@ -285,12 +285,12 @@ img {
 .home__img {
 	width: 120px;
 	height: 120px;
-	background-color: var(--container-color);
+	background-color: var(--container-color-alt);
 	padding: .7rem;
 	border-radius: 50%;
 	justify-self: center;
 	margin-bottom: var(--mb-1);
-	animation: pulse 3s ease-in-out infinite;
+	animation: pulse 3s ease-in-out 2;
 }
 
 @keyframes pulse {
@@ -326,7 +326,7 @@ img {
 }
 
 .home__icon {
-	background-color: var(--container-color);
+	background-color: var(--container-color-alt);
 	border-radius: 50%;
 	padding: .3rem;
 	font-size: 1.2rem;
@@ -369,7 +369,7 @@ img {
 }
 
 .social__icon {
-	background-color: var(--container-color);
+	background-color: var(--container-color-alt);
 	border-radius: 50%;
 	padding: .3rem;
 	font-size: 1.2rem;
@@ -510,7 +510,7 @@ img {
 	border-radius: 50%; */
 	padding: .3rem;
 	font-size: 1.3rem;
-	/* color: var(--text-color-light); */
+	color: var(--text-color-light);
 	margin-bottom: .25rem;
 }
 
@@ -524,7 +524,7 @@ img {
 	justify-content: center;
 	align-items: center;
 	padding: .3rem;
-	background-color: var(--container-color-alt);
+	background-color: var(--container-color);
 	border-radius: 50%;
 	z-index: var(--z-tooltip);
 	transition: .3s;
@@ -545,26 +545,26 @@ img {
 
 /* For small devices, menu two columns */
 
-@media screen and (max-width: 320px) {
+@media screen and (min-width: 320px) and (max-width: 600px) {
 
 	.nav__name {
 		display: none;
 	}
 	.bd-container {
-		width: 100%;
+		width: calc(100% - 3rem);
 		margin-left: var(--mb-3);
 		margin-right: var(--mb-3);
 	}
 
 	.change-theme {
 		position: none;
-		background-color: var(--container-color-alt);
+		background-color: var(--container-color);
 		border-radius: 50%;
 	}
 
 	/* .open-whats {
 		position: absolute;
-		background-color: var(--container-color-alt);
+		background-color: var(--container-color);
 		border-radius: 50%;
 	} */
 
